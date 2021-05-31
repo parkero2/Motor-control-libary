@@ -16,5 +16,5 @@ MotorDrive::setOffset(int LMOffset) {
 
 MotorDrive::changeSpeed(int speed) {
     //Calculate speeds
-    analogWrite()
+    analogWrite(_Lsp, (speed + (speed/100 * _OffSet)));
 }
