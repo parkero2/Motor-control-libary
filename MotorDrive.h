@@ -12,6 +12,13 @@ class MotorDrive {
         void Forward();
         void Backward();
         void swerve(int offset);
-        void stop();        
+        void haltMotors();
+        void getStatus();  
+    private:
+        int _Lf;
+        int _Lb;
+        int _Rf;
+        int _Rb;
+        short status;
 };
 #endif
